@@ -107,7 +107,7 @@ div#content
 }
 .blue
 {
-	color: #00a2f3;
+	color: #3ec797;
 }
 .green
 {
@@ -124,14 +124,14 @@ td {
 }
 
 th {
-	background-color: #a5e1ff;	
+	background-color: #656598;	
 	border-bottom: 1px solid #00a2f3;
 }
 
 .cameraname {
 	width: 120px;
-	background-color: #d8f2ff;	
-	border-right: 1px solid #00a2f3;
+	background-color: #9dd7b4;	
+	border-right: 1px solid #7eb2bd;
 }
 
 /*form design*/
