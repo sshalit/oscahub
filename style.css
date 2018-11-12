@@ -17,7 +17,7 @@ h1{
 a
 {
 	text-decoration: none;	
-	color: #8bccec;
+	color: #3e78c7;
 }
 
 p
@@ -63,20 +63,20 @@ div#menu ul li a
 
 div#menu ul li a#currentred
 {
-	color: #3e78c7;
-	background-color: #b0ddd0;
+	color: #f8ffef;
+	background-color: #3e78c7;
 }
 
 div#menu ul li a#currentblue
 {
-	color: #3e78c7;	
-	background-color: #b0ddd0;
+	color: #f8ffef;	
+	background-color: #3e78c7;
 }
 
 div#menu ul li a#currentgreen
 {
-	color: #3e78c7;	
-	background-color: #b0ddd0;
+	color: #f8ffef;	
+	background-color: #3e78c7;
 }
 
 /*navigation item hover change*/
