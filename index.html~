@@ -2,32 +2,67 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="author" content="Joe Smith">
-<meta name="keywords" content="lomography, analog photography,photography, camera">
-<meta name="description" content="It is a website about Lomography">
+<meta name="author" content="Osca Hub Group">
+<meta name="keywords" content="coop, hark, Oberlin">
+<meta name="description" content="All information about Harkness">
 <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
-<title>Lomography | Timeline</title>
+<title>OSCA Hub - Harkness</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<h1>OSCA Hub</h1>
 <div id="menu">
   <ul>
-	<li><a href="index.html" id="currentred">Timeline</a></li>
-    <li><a href="cameras.html">Cameras</a></li>
-    <li><a href="signup.html">Sign up</a></li>
+	<li><a href="index.html" id="currentred">Home</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+    <li><a href="mealinfo.html">Meal Information</a></li>
   </ul>
 </div>
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="192283966632-qb5299hi21ad85tki8bm60nitq2f2v67.apps.googleusercontent.com
+">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" ></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
 
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+	  <a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+  </body>
+</html>
 <div id="content">
-<h2 class="red">Lomography began with a fateful encounter in the early 1990s...</h2>
-<img class="right" src="beach.jpg" alt="beach">
+<h2 class="red">Updates</h2>
+<img class="right" src="1200px-Oberlin_OSCA_Logo.svg.png" alt="oscalogo">
 <p>... when a group of students in Vienna, Austria, stumbled upon the Lomo Kompakt Automat – a small, enigmatic Russian camera. Mindlessly taking the shot from the hip, and sometimes looking through the viewfinder, they were astounded with the mindblowing photos that it produced – the colours were vibrant, with deep saturation and vignettes that framed the shot – it was nothing like they had seen before! Upon returning home, friends wanted their own Lomo LC-A, igniting a new style of artistic experimental photography that we now know as Lomography!</p>
 
-<h2 class="red">Following the mania</h2>
-<p>... that ensued upon the introduction of Lomography, they flew to St. Petersburg to work out a contract for the worldwide distribution of this fantastic little camera. Soon, the 10 Golden Rules was set up as a guide to this analogue movement, followed by exhibitions, world congresses, parties, installations, collaborations, and events. New products, films, and accessories were developed, and Lomography.com served as the communication hub for Lomographers worldwide. At the same time, Lomography Gallery Stores were put up worldwide.</p>
-
-<h2 class="red">Today</h2>
+<h2 class="red">About Harkness</h2>
+	<p>Situated in the center of campus, Harkness is a housing and dining co-op with a focus on vegetarian cuisine with vegan options offered at each meal. Harkness is the largest co-op with 109 students eating there; 64 of which also live in the building. It also is the only co-op on campus without a communal television.</p>
+<h2 class="red">Contact</h2>
 <p>... we are a globally active organisation dedicated to experimental and creative visual expression, a playful combination of lo-tech and hi-tech, and a cultural institution involved in commercial photographic and design company. We are dedicated to the unique imagery and style of analogue photography, and will continue to contribute to its development!</p>
 </div>
 
