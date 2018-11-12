@@ -4,7 +4,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-    font-family:Optima, sans-serif;
+  font-family:Optima, sans-serif;
 	font-size: 12pt;
 	background-color: #f8feff;
 }
@@ -112,6 +112,16 @@ div#content
 .green
 {
 	color: #8bccec;
+	text-align: center;
+}
+.lunch 
+{
+	display: inline;
+	float: left;
+}
+.dinner {
+	display: inline;
+	float: right;
 }
 
 /*table styling*/
@@ -141,7 +151,6 @@ th {
 	width:100px;
 	height:30px;
 	background:#3e78c7;
-	color: #f0ffef
 	text-align: center;
 	font-weight:bold;
 }
