@@ -9,8 +9,7 @@ body
 	background-color: #f8feff;
 }
 h1{
-    text-align: center;
-    font-weight: bold;
+	text-align: center;
 	font-size: 48pt;
 	color: #3e78c7;
 }
@@ -24,7 +23,7 @@ a
 p
 {
 	text-align:justify;
-	
+	text-indent: 1.5em;	
 }
 
 .right
@@ -98,8 +97,17 @@ div#content
 	margin: 2em auto;
 	background-color: 3e78c7;
 	border: 3px solid #3e78c7;
-	padding: 20px;
+	padding: 50px;
 }
+
+div#mini{
+	width: 40%
+	margin: 2em auto;
+	background-color: 3e78c7;
+	border: 3px dotted #3e78c7;
+	padding: 50px;
+}
+
 
 /*header classes*/
 .red
