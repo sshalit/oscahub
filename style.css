@@ -63,28 +63,28 @@ div#menu ul li a
 
 div#menu ul li a#currentred
 {
-	color: #b0ddd0;
-	background-color: #f8feff;
+	color: #3e78c7;
+	background-color: #b0ddd0;
 }
 
 div#menu ul li a#currentblue
 {
-	color: #b0ddd0;	
-	background-color: #f8feff;
+	color: #3e78c7;	
+	background-color: #b0ddd0;
 }
 
 div#menu ul li a#currentgreen
 {
-	color: #b0ddd0;	
-	background-color: #f8feff;
+	color: #3e78c7;	
+	background-color: #b0ddd0;
 }
 
 /*navigation item hover change*/
 
 div#menu ul li a:hover
 {
-	color: #7eb2bd;
-	background-color: #b0ddd0;
+	color: #f8ffef;
+	background-color: #3e78c7;
 }
 
 /*end of styling navigation*/
