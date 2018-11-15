@@ -178,7 +178,7 @@ textarea {
   text-align: center;
 }
 .button-success {
-  color: white;
+  color: green;
   border-radius: 4px;
   text-shadow: 0 1px 1px #008000);
   background: ##008000; /* this is a green */
