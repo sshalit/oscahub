@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="author" content="Joe Smith">
+<meta name="author" content="Fab Six">
 <meta name="keywords" content="osca, coop, oberlin, oscahub">
 <meta name="description" content="It is a website about coop information at Oberlin College">
 <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 <title>OSCAHub | Meal Info</title>
 <link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,8 +17,7 @@
   <ul>
 	<li><a href="index.html">Home</a></li>
     <li><a href="calendar.html">Calendar</a></li>
-	<li><a href="mealinfo.html" id="currentgreen">Meal Information</a></li>
-		<li><a href="spreadsheetlinks.html">Spreadsheet Links</a></li>
+    <li><a href="mealinfo.html" id="currentgreen">Meal Information</a></li>
   </ul>
 </div>
 
@@ -25,10 +25,36 @@
 
 <h2 class="green">MEALS OF THE DAY</h2>
 <div id="mini">
-    <h3 class="lunch">LUNCH</h3>
-    <p>head cook: </p>
-    <h3 class="dinner">DINNER<h3>
-    <p>head cook: </p>
+<h3>LUNCH</h3>
+<p>*********</p>
+<ul id="myTasks" contenteditable="true">
+<li><b>Head Cook:</b></li>
+<li>Protein: </li>
+<li>Carbs:</li>
+<li>Veggies:</li>
+<li>Restrictions:</li>
+</ul>
+<br>
+<h3>DINNER</h3>
+<p>*********</p>
+<ul id="myTasks" contenteditable="true">
+<li><b>Head Cook:</b></li>
+<li>Protein: </li>
+<li>Carbs:</li>
+<li>Veggies:</li>
+<li>Restrictions:</li>
+</ul>
+<script>
+$(document).ready(function(){
+  $("#myTasks").blur(function() {
+    localStorage.setItem('myTasksData', this.innerHTML);
+  });
+  if ( localStorage.getItem('myTasksData') ) {
+    $("#myTasks").html(localStorage.getItem('myTasksData'));
+  }
+});
+</script>
+<br>
 </div>
 
 </div>
