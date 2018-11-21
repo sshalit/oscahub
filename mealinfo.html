@@ -88,55 +88,6 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-  $(".editor-header a").click(function(e){
-    e.preventDefault();
-
-    var _val = $(this).data("role"),
-        _sizeValIn = parseInt($(this).data("size-val") + 1),
-        _sizeValRe = parseInt($(this).data("size-val") - 1),
-        _size = $(this).data("size");
-    if(_size == "in-size"){
-      document.execCommand(_val, false, _sizeValIn + "px");
-    } else{
-      document.execCommand(_val, false, _sizeValRe + "px");
-    }
-  });
-});
-
-$(document).ready(function(){
-  var $text = $("#text"),
-      $submit = $("input[type='submit']"),
-      $listComment = $(".list-comments"),
-      $loading = $(".loading"),
-      _data,
-      $totalCom = $(".total-comment");
-
-  $totalCom.text($(".list-comments > div").length);
-
-  $($submit).click(function(){
-    if($text.html() == ""){
-      alert("Plesea write a comment!");
-      $text.focus();
-    } else{
-      _data = $text.html();
-      $.ajax({
-        type: "POST",
-        url: window.local,
-        data: _data,
-        cache: false,
-        success: function(html){
-          $loading.show().fadeOut(300);
-          $listComment.append("<div>"+_data+"</div>");
-          $text.html("");
-          $totalCom.text($(".list-comments > div").length);
-        }
-      });
-      return false;
-    }
-  });
-});</script>
 
 <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd3FTY3fpxZS7kb4at8UMZ86cD1GbctRZL4UMYg1wxkt_2B.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
 <a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>
