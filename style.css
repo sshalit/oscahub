@@ -388,3 +388,36 @@ a{
 .menu-right:after{
   margin-left: 5px;
 }
+
+.flash-comments{
+    border:1px solid #aeaeae;
+    border-radius: 10px;
+    width:50%;
+    overflow: hidden;
+}
+
+.post{
+    padding-top:10px;
+}
+
+.flash-comments .header{
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.flash-comments .header .text{
+    padding-left:15px;
+    line-height: 25px;
+}
+
+.flash-comments .comment{
+    display: flex;
+    border-bottom:1px solid #eaeaea;
+    padding: 4px;
+}
+
+section{
+    padding: 15px;
+    width:calc(100% - 45px);
+}
