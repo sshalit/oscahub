@@ -1,0 +1,82 @@
+<DOCTYPE html>
+
+	<html>
+	  <head>
+	    <meta charset="utf-8">
+	    <meta name="author" content="Osca Hub Group">
+	    <meta name="keywords" content="coop, hark, Oberlin">
+	    <meta name="description" content="All information about Harkness">
+	    <link href='http://fonts.googleapis.com/css?family=tahoma' rel='stylesheet'>
+	    <style>
+	      body {
+	      font-family: tahoma;
+	      }
+	    </style>
+	    <title>OSCA Hub </title>
+
+	    <link rel="stylesheet" href="style.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	  </head>
+
+	  <body ng-app="ToDoList">
+	    <body>
+  <h1> <a href "index.html">
+      <img src="oscahublogo.png" alt="OSCA Hub logo"
+	   style="height:200px;width:200px;class:center;"></a></h1>
+<div id="menu">
+  <ul>
+	<li><a href="index.html" id="currentred">Home</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+	<li><a href="mealinfo.html">Meal Information</a></li>
+	<li><a href="spreadsheetlinks.html">Spreadsheet Links</a></li>
+	<li><a href="subrequest.html">Sub Requests</a></li>
+  </ul>
+</div>
+
+<div id="content">
+<div id="mini">
+<h2 class="green">Announcements</h2>
+
+		<div ng-controller="MainController">
+
+		<singlelist mylist="todo"></singlelist>
+			<input ng-model="addToDo">
+			<button ng-click="addItem(todo.list, addToDo)">Update</button>
+	<br>
+</div>
+</div>
+	<!-- Modules -->
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<!-- Controllers -->
+	<script src="js/controllers/MainController.js"></script>
+
+	<!-- Directives -->
+	<script src="js/directives/singlelist.js"></script>
+
+	    <h2 class="red">About OSCA</h2>
+    <img height = "100"width="100"class="right" src="oscalogo.png" alt="oscalogo">
+    <p>OSCA is a student-run non-profit corporation that feeds approximately ¼ of Oberlin’s student body. OSCA provides at-cost housing and dining to members, and works to provide inexpensive, healthy, tasty, and environmentally-wise meals. The organization aims to buy food based on principles of accessibility, sustainability, and supporting fair labor practices. OSCA operates through modified consensus, and OSCA is one of the largest cooperatives in North America.</p>
+    
+    <h2 class="red">About Harkness</h2>
+      <p>Situated in the center of campus, Harkness is a housing and dining co-op with a focus on vegetarian cuisine with vegan options offered at each meal. Harkness is the largest co-op with 109 students eating there; 64 of which also live in the building. It also is the only co-op on campus without a communal television.</p>
+    <h2 class="red">Contact Information</h2>
+    <p class="contacts">
+      <ul>
+	<h3 class="green">Harkness Fall 2018 Positions</h3>
+        <li>DLECs: Tala Clower, Sarah Hampton, Hamby</li>
+	<li>FSCs: Jonas Mondschedin and Madeleine Feola</li>
+	<li>KitchCo/Cleanliness Coordinator: V Armstrong, Sophie Maffie, Barret Carr</li>
+	<li>MemCo: Quinn Meckley (Misjobs), Wren Fiocco (Workchart)</li>
+	<li>Treasurer: Sezny Watkins</li>
+        <li>Food buyer: Gavin Epstein, Jane Vourlekis</li>
+        <li>Nutrition Coordinator: Hamby</li>
+	<li>Board Rep: Elise Hardebeck, Caroline Spittel</li>
+	<li>New Member Trainer: Emily Jacobson</li>
+	<li>Food Unpacker/Recycler: Carter Rasnic Olson, Emma Kazal</li>
+	<li>AccessCo: Margo Roberts, Jesse Noily</li>
+      </ul></div>
+    </p>
+
+</body>
+</html>

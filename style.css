@@ -1,0 +1,423 @@
+/*default settings for website*/
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+body
+{
+	margin: 0;
+	padding: 0;
+  	font-family: tahoma;
+	font-size: 12pt;
+	background-color: #f8feff;
+}
+h1{
+	text-align: center;
+	font-size: 48pt;
+	color: #3e78c7;
+}
+
+h4 {
+	display: inline;
+}
+
+a
+{
+	text-decoration: none;	
+	color: #3e78c7;
+}
+
+p
+{
+	text-align:justify;
+	text-indent: 1.5em;	
+	display: inline;
+	text-decoration: bold;
+}
+
+.right
+{
+	float: right;	
+	margin: 0 0 20px 20px;
+}
+
+
+/*navigation bar*/
+
+div#menu
+{
+	margin-top: 4em;
+	text-align: center;
+}
+
+div#menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#menu li
+{
+	display: inline;
+	margin-right: .5em;
+}
+
+div#menu ul li a
+{
+	padding: 10px 20px;
+}
+
+/*current page indicator*/
+
+div#menu ul li a#currentred
+{
+	color: #f8ffef;
+	background-color: #3e78c7;
+}
+
+div#menu ul li a#currentblue
+{
+	color: #f8ffef;	
+	background-color: #3e78c7;
+}
+
+div#menu ul li a#currentgreen
+{
+	color: #f8ffef;	
+	background-color: #3e78c7;
+}
+
+/*navigation item hover change*/
+
+div#menu ul li a:hover
+{
+	color: #f8ffef;
+	background-color: #3e78c7;
+}
+
+/*end of styling navigation*/
+
+/*content*/
+
+div#content
+{
+	width: 70%;
+	margin: 2em auto;
+	background-color: 3e78c7;
+	border: 3px solid #3e78c7;
+	padding: 50px;
+}
+
+div#mini{
+	margin: 2em auto;
+	background-color: 3e78c7;
+	border: 3px dotted #3e78c7;
+	padding: 50px;
+}
+
+
+/*header classes*/
+.red
+{
+	color: #3e78c7;
+}
+.blue
+{
+	color: #b0ddd0;
+}
+.green
+{
+	color: #8bccec;
+	text-align: center;
+}
+
+
+.meal1
+{
+	display: inline;
+	float: left;
+}
+
+.meal2{
+	float:right;
+}
+
+/*table styling*/
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 11px;	
+}
+
+th {
+	background-color: #d8fff6;	
+	border-bottom: 1px solid #b0ddd0;
+}
+
+/* stuff that i, sophie shalit, added to this css*/ 
+
+aside {
+    background: #3e78c7; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    	text-align:justify;
+    color: #fff;
+    margin-bottom: 2em;
+}
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: green;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px #008000);
+  background: ##008000; /* this is a green */
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  float: right;
+}
+#name, #email {
+  width: 50%;
+}
+
+.cameraname {
+	width: 120px;
+	background-color: #8bccec;	
+	border-right: 1px solid #7eb2bd;
+}
+
+/*form design*/
+
+.button {
+	border: none;
+	width:100px;
+	height:30px;
+	background:#3e78c7;
+	text-align: center;
+	font-weight:bold;
+}
+
+textarea{
+  resize: none;
+  outline: none;
+  width: 394px;
+  font-family: tahoma;
+  background: #f9f9f9;
+}
+
+textarea:focus{
+  background: #fff;
+}
+
+input[type="submit"]{
+  width: 400px;
+  padding: 5px 0px;
+  font-weight: bold;
+  margin-top: -6px;
+}
+
+.content{
+  width: 100%;
+}
+
+.comments{
+  width: 400px;
+  margin: 30px auto;
+}
+
+.insert-text{
+  position: relative;
+}
+
+.insert-text .loading{
+  position: absolute;
+  bottom: -25px;
+  display: none;
+}
+
+.insert-text .total-comment{
+  position: absolute;
+  bottom: -25px;
+  right: 0px;
+}
+
+.insert-text .total-comment:before{
+  content: "Total comment: ";
+  font-weight: bold;
+}
+
+.list-comments{
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+}
+
+.list-comments > div{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list-comments > div:last-child{
+  border-bottom: none;
+}
+
+.editor{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editor-header{
+  border-bottom: 1px solid #ccc;
+}
+
+.editor-header a{
+  display: inline-block;
+  padding: 10px;
+  color: #666;
+}
+
+.editor-header a:hover{
+  color: #000;
+}
+
+.editor-content{
+  padding: 10px;
+  outline: none;
+  min-height: 80px;
+  background: #f9f9f9;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.editor-content:focus{
+  background: #fff;
+}
+
+b{
+  font-weight: bold;
+}
+
+i{
+  font-style: italic;
+}
+
+p{
+  line-height: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+[data-role="bold"]{
+  font-weight: bold;
+}
+
+[data-role="italic"]{
+  font-style: italic;
+}
+
+[data-role="underline"]{
+  text-decoration: underline;
+}
+
+[class^="menu"] {
+  position: relative;
+  top: 6px;
+  display: block;
+  width: 27px;
+  height: 2px;
+  margin: 0 auto;
+  background: #999;
+}
+
+[class^="menu"]:before {
+  content: '';
+  top: -5px;
+  width: 80%;
+  position: relative;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  background: #999;
+}
+
+[class^="menu"]:after {
+  content: '';
+  top: 3px;
+  width: 80%;
+  position: relative;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  background: #999;
+}
+
+.menu-left {
+  margin-right: 5px;
+}
+
+.menu-left:before{
+  margin-right: 5px;
+}
+
+.menu-left:after{
+  margin-right: 5px;
+}
+
+.menu-right {
+  margin-left: 5px;
+}
+
+.menu-right:before{
+  margin-left: 5px;
+}
+
+.menu-right:after{
+  margin-left: 5px;
+}
+
+.flash-comments{
+    border:1px solid #aeaeae;
+    border-radius: 10px;
+    width:50%;
+    overflow: hidden;
+}
+
+.post{
+    padding-top:10px;
+}
+
+.flash-comments .header{
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.flash-comments .header .text{
+    padding-left:15px;
+    line-height: 25px;
+}
+
+.flash-comments .comment{
+    display: flex;
+    border-bottom:1px solid #eaeaea;
+    padding: 4px;
+}
+
+section{
+    padding: 15px;
+    width:calc(100% - 45px);
+}
