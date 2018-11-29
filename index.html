@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="author" content="Osca Hub Group">
-<meta name="keywords" content="coop, hark, Oberlin">
-<meta name="description" content="All information about Harkness">
-<link href='http://fonts.googleapis.com/css?family=tahoma' rel='stylesheet'>
-<style>
-      body {
-        font-family: tahoma;
-      }
-    </style>
-<title>OSCA Hub | Harkness</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<DOCTYPE html>
 
-<body>
+	<html>
+	  <head>
+	    <meta charset="utf-8">
+	    <meta name="author" content="Osca Hub Group">
+	    <meta name="keywords" content="coop, hark, Oberlin">
+	    <meta name="description" content="All information about Harkness">
+	    <link href='http://fonts.googleapis.com/css?family=tahoma' rel='stylesheet'>
+	    <style>
+	      body {
+	      font-family: tahoma;
+	      }
+	    </style>
+	    <title>OSCA Hub </title>
+
+	    <link rel="stylesheet" href="style.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	  </head>
+
+	  <body ng-app="ToDoList">
+	    <body>
   <h1> <a href "index.html">
       <img src="oscahublogo.png" alt="OSCA Hub logo"
 	   style="height:200px;width:200px;class:center;"></a></h1>
@@ -28,78 +32,29 @@
 	<li><a href="subrequest.html">Sub Requests</a></li>
   </ul>
 </div>
-<html lang="en">
-  <head>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="192283966632-qb5299hi21ad85tki8bm60nitq2f2v67.apps.googleusercontent.com
-">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" ></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
 
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
-	  <a href="#" onclick="signOut();">Sign out</a>
-<script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-</script>
-  </body>
-</html>
 <div id="content">
-    <h2 class="green">LIVE UPDATES</h2>
-    <div id="mini">
-      <html>
-<!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24L.BH3Zlc6Zn1LPlAW.Fqb0"+"&opts=16862&num=10&ts=1543458930974");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
-	<body ng-app="ToDoList">
+<div id="mini">
+<h2 class="green">Announcements</h2>
 
 		<div ng-controller="MainController">
 
 		<singlelist mylist="todo"></singlelist>
 			<input ng-model="addToDo">
-			<button ng-click="addItem(todo.list, addToDo)">Post Live Update</button>
-
-		</div>
-
+			<button ng-click="addItem(todo.list, addToDo)">Update</button>
+	<br>
+</div>
+</div>
 	<!-- Modules -->
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 	<!-- Controllers -->
-	<script src="MainController.js"></script>
+	<script src="js/controllers/MainController.js"></script>
 
 	<!-- Directives -->
-	<script src="singlelist.js"></script>
+	<script src="js/directives/singlelist.js"></script>
 
-</body>
-	</html>
-    </div>
-
-    <!-- I AM ADDING THIS TO TEST REACT -->
-    <div id="like_button_container"></div>
-    
-    <h2 class="red">About OSCA</h2>
+	    <h2 class="red">About OSCA</h2>
     <img height = "100"width="100"class="right" src="oscalogo.png" alt="oscalogo">
     <p>OSCA is a student-run non-profit corporation that feeds approximately ¼ of Oberlin’s student body. OSCA provides at-cost housing and dining to members, and works to provide inexpensive, healthy, tasty, and environmentally-wise meals. The organization aims to buy food based on principles of accessibility, sustainability, and supporting fair labor practices. OSCA operates through modified consensus, and OSCA is one of the largest cooperatives in North America.</p>
     
@@ -120,17 +75,8 @@
 	<li>New Member Trainer: Emily Jacobson</li>
 	<li>Food Unpacker/Recycler: Carter Rasnic Olson, Emma Kazal</li>
 	<li>AccessCo: Margo Roberts, Jesse Noily</li>
-      </ul>
+      </ul></div>
     </p>
-</div>
-
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="like_button.js"></script>
 
 </body>
 </html>
